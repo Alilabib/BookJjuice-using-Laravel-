@@ -24,3 +24,4 @@ Route::get('add',"ProductController@AddProduct");
 Route::POST('add',"ProductController@AddProduct");
 Route::get('add/{id}',"ProductController@DeleteProduct");
 Route::get('edit/{id}',"ProductController@EditProduct");
+Route::POST('edit/{id}',"ProductController@EditProduct");

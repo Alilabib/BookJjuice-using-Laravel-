@@ -36,7 +36,19 @@ class ProductController extends Controller
         return redirect('product');
     }
     
-    Public function EditProduct($id){
-        return view('product.edit');
+    Public function EditProduct(Request $request, $id){
+        if($request->isMethod('post')){
+            $myProduct = Product::find($id);
+            $myProduct->name = $request->input('name');
+            $myProduct->price= $request->input('price');
+            $myProduct->save();
+
+            return redirect('product');
+        }else{
+        $product = Product::find($id);
+        $arr = array('product'=>$product);
+
+        return view('product.edit',$arr);
+      }
     }
 }

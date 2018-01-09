@@ -4,7 +4,7 @@
     <title>ADD Product </title>
 </head>
     <body>
-        <form action="add" method="post">
+        <form action="/add" method="post">
             {{csrf_field()}}
             <label for="name">Product Name </label>
             <input type="text" id="name" name="name" placeholder="Enter Product name"><br><br>
