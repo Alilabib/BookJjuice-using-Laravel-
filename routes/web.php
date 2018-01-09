@@ -20,3 +20,7 @@ Route::get('/home',"adminController@home");
 Route::get('/contact/{id}/{name}',"adminController@contact");
 Route::get('/product',"ProductController@ViewProduct");
 Route::get('/product/{id}',"ProductController@FindProduct");
+Route::get('add',"ProductController@AddProduct");
+Route::POST('add',"ProductController@AddProduct");
+Route::get('add/{id}',"ProductController@DeleteProduct");
+Route::get('edit/{id}',"ProductController@EditProduct");
