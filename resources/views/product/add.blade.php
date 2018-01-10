@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ADD Product </title>
-</head>
-    <body>
+@extends('layouts.app')
+@section('content')
+    @if(count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            </ul>
+        </div>
+    @endif
+
         <form action="/add" method="post">
             {{csrf_field()}}
             <label for="name">Product Name </label>
@@ -14,6 +19,4 @@
                 
             <input type="submit" id="submit" value="ADD">
         </form>
-        
-    </body>
-</html>
+@endsection('content')

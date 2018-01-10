@@ -21,7 +21,15 @@ class ProductController extends Controller
     }
  
     Public function AddProduct( Request $request){
+
+
         if($request->isMethod('post')){
+            $this->validate($request,[
+                'name'=>'required|max:25|unique:products',
+                'price'=>'required|min:2|max:8'
+            ]);
+
+
             $newProduct = new Product();
             $newProduct->name = $request->input('name');
             $newProduct->price= $request->input('price');

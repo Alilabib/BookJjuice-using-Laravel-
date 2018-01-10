@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <table>
     <tr>
         <td>Name   </td>
@@ -19,3 +21,6 @@
 @endforeach
 
 </table>
+
+<img src="img/black-and-white-image-of-laptop-computer-keyboard-mobile-phone-and-headphones (1).jpg" />
+@endsection

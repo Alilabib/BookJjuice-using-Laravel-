@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ADD Product </title>
-</head>
-    <body>
+@extends('layouts.app')
+@section('content')
         <form action="/edit/{{$product->id}}" method="post">
             {{csrf_field()}}
             <label for="name">Product Name </label>
@@ -15,5 +11,4 @@
             <input type="submit" id="submit" value="Edit">
         </form>
 
-    </body>
-</html>
+@endsection
