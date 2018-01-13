@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<table>
+<div class="container">
+<table class="table table-stripped">
     <tr>
         <td>Name   </td>
         <td>Price  </td>
@@ -14,13 +15,14 @@
 
     <td>{{$myProduct->price}}</td>
 
-    <td><a href="edit/{{$myProduct->id}}"> Edit </a></td>
+    <td><a class="btn btn-info" href="edit/{{$myProduct->id}}"> Edit </a></td>
 
-    <td><a href="add/{{$myProduct->id}}"> Delete </a></td>
+    <td><a class="btn btn-danger" href="add/{{$myProduct->id}}"> Delete </a></td>
 </tr>
 @endforeach
 
 </table>
 
-<img src="img/black-and-white-image-of-laptop-computer-keyboard-mobile-phone-and-headphones (1).jpg" />
+</div>
+
 @endsection

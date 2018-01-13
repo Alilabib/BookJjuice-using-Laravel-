@@ -5,9 +5,12 @@
             Page Title
         </title>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css"/>
     </head>
-    <body style="padding-top: 60px">
+    <body style="">
         <!-- Navigation -->
+    <div class="content">
+    <div class="over">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">CMS</a>
@@ -33,9 +36,12 @@
 
 
         @yield('content')
-
+<div class="container">
         <p> all copy right to Ali Labib</p>
+</div>
 
+</div>
+</div>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>

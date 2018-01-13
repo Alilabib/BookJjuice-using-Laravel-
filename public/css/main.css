@@ -1,0 +1,22 @@
+body{     
+padding-top: 55px;
+color: white;     
+}
+.content{
+    width: 100%;
+    min-height:570px;
+    background: url("../img/black-and-white-image-of-laptop-computer-keyboard-mobile-phone-and-headphones (1).jpg")no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size: cover;    
+}
+
+.over{
+     min-height: 570px;
+    background: rgba(3,3,3,.6);
+    color: #fff;
+}
+
+.has-error{
+    color: red;
+}
